@@ -232,6 +232,38 @@ collection:
             send: true
             store: true
           rebuildPath: true
+  - name: PromptTemplate Demo
+    meta:
+      id: fld_6b2c0b578f574e29993aeef6acdb9c5c
+      created: 1784012136243
+      modified: 1784012136243
+      sortKey: -1784012136243
+      description: ""
+    children:
+      - url: http://localhost:8080/api/email?customerName="Aritra
+          Chatterjee"&customerMessage="When I am going to get the order
+          delivery?"
+        name: Using a prompt template for forming email
+        meta:
+          id: req_982df5c2bf104e9db768625958039edf
+          created: 1784012155949
+          modified: 1784012217231
+          isPrivate: false
+          description: ""
+          sortKey: -1784012155949
+        method: GET
+        parameters:
+          - name: message
+            value: what is the capital of India?
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
 cookieJar:
   name: Default Jar
   meta:

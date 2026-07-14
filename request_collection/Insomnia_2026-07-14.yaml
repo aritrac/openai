@@ -1,15 +1,15 @@
 type: collection.insomnia.rest/5.0
 schema_version: "5.1"
-name: Scratch Pad
+name: Sample Requests
 meta:
-  id: wrk_scratchpad
-  created: 1783988645332
-  modified: 1783988645332
+  id: wrk_52c64db11f7f44ada1da7c9d5168caa4
+  created: 1783996330880
+  modified: 1783996361926
   description: ""
 collection:
   - name: OpenAI_Requests
     meta:
-      id: fld_2ac5008e533f484e85f147b5742b2208
+      id: fld_aa488b49015a46029dce08e0229ce0ca
       created: 1783988725424
       modified: 1783988725424
       sortKey: -1783988725424
@@ -18,7 +18,7 @@ collection:
       - url: http://localhost:8080/api/chat?message=what is the capital of India?
         name: OpenAI Simple Chat Request
         meta:
-          id: req_485e391d415c40fa810f449ef6b01a63
+          id: req_91d63bde02c248c0b270f69871a47bb1
           created: 1783988730811
           modified: 1783991155048
           isPrivate: false
@@ -37,7 +37,7 @@ collection:
           are you using?
         name: Ollama Simple Prompt Local
         meta:
-          id: req_9477f924725a426f99ecc36bef3e214d
+          id: req_0db3613c7d654e08b06f21449a7c90ef
           created: 1783991136049
           modified: 1783993577556
           isPrivate: false
@@ -55,7 +55,7 @@ collection:
       - url: http://localhost:8080/api/chat?message=tell me a joke about Spring Boot?
         name: Ollama Simple Joke Prompt Local
         meta:
-          id: req_1ae5c3ebb89f48aa8e631f75ef524991
+          id: req_10e07f44867b47bb9ac78c8883eda8e2
           created: 1783993625482
           modified: 1783993675413
           isPrivate: false
@@ -73,7 +73,7 @@ collection:
       - url: http://localhost:8080/api/chat?message=tell me a joke about Spring AI?
         name: OpenAI Simple Joke Chat Request
         meta:
-          id: req_c3ccb767d29f43fb8fd591d46b440cad
+          id: req_14a4c16e683a4db19f65bbab1f92c652
           created: 1783993634384
           modified: 1783993650593
           isPrivate: false
@@ -92,7 +92,7 @@ collection:
           are you using?
         name: Docker Gemma Simple Prompt Local
         meta:
-          id: req_b974631fc351489e8d54ff5a72dee07c
+          id: req_880e5250e4f2434c9848aca217ae0bb1
           created: 1783995902490
           modified: 1783995902490
           isPrivate: false
@@ -110,7 +110,7 @@ collection:
       - url: http://localhost:8080/api/chat?message=tell me a joke about Spring Boot?
         name: Docker Gemma Simple Joke Prompt Local
         meta:
-          id: req_40691ff9e410456389b2d6dd11580d32
+          id: req_595371ba13c140b789536ca64e3f17c9
           created: 1783995935941
           modified: 1783995935941
           isPrivate: false
@@ -125,16 +125,53 @@ collection:
             send: true
             store: true
           rebuildPath: true
+      - url: http://localhost:8080/api/chat?message=what is your name and which model
+          are you using?
+        name: Bedrock Claude Sonnet Simple Prompt Local
+        meta:
+          id: req_0a1504f442a84a25b03bcc2faae5513b
+          created: 1783999930024
+          modified: 1783999930024
+          isPrivate: false
+          description: ""
+          sortKey: -1783990835394.25
+        method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/chat?message=tell me a joke about Spring Boot?
+        name: Bedrock Claude Sonnet Simple Joke Prompt Local
+        meta:
+          id: req_bf3f01adaf6044a38ba492d6defe6eec
+          created: 1783999948233
+          modified: 1783999948233
+          isPrivate: false
+          description: ""
+          sortKey: -1783989632775.25
+        method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
 cookieJar:
   name: Default Jar
   meta:
-    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    id: jar_b776f420388f47deaef0b68124bc4989
     created: 1783988688023
     modified: 1783988688023
 environments:
   name: Base Environment
   meta:
-    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    id: env_79f245c23d7347b495ae3d2bf40120aa
     created: 1783988688021
     modified: 1783988688021
     isPrivate: false

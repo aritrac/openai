@@ -162,12 +162,12 @@ collection:
             send: true
             store: true
           rebuildPath: true
-      - url: http://localhost:8080/api/chat?message=who will win the world cup?
+      - url: http://localhost:8080/api/chat?message=when my laptop can be replaced?
         name: OpenAI System and User Role Chat Request
         meta:
           id: req_d7b7f4f915e943c8a0861dfff6f3fe79
           created: 1784009475953
-          modified: 1784009529319
+          modified: 1784011025865
           isPrivate: false
           description: ""
           sortKey: -1783988730786

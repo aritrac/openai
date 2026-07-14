@@ -88,6 +88,43 @@ collection:
             send: true
             store: true
           rebuildPath: true
+      - url: http://localhost:8080/api/chat?message=what is your name and which model
+          are you using?
+        name: Docker Gemma Simple Prompt Local
+        meta:
+          id: req_b974631fc351489e8d54ff5a72dee07c
+          created: 1783995902490
+          modified: 1783995902490
+          isPrivate: false
+          description: ""
+          sortKey: -1783990534739.5
+        method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/chat?message=tell me a joke about Spring Boot?
+        name: Docker Gemma Simple Joke Prompt Local
+        meta:
+          id: req_40691ff9e410456389b2d6dd11580d32
+          created: 1783995935941
+          modified: 1783995935941
+          isPrivate: false
+          description: ""
+          sortKey: -1783989332120.5
+        method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
 cookieJar:
   name: Default Jar
   meta:

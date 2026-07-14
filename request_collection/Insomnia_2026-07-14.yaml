@@ -162,6 +162,24 @@ collection:
             send: true
             store: true
           rebuildPath: true
+      - url: http://localhost:8080/api/chat?message=who will win the world cup?
+        name: OpenAI System and User Role Chat Request
+        meta:
+          id: req_d7b7f4f915e943c8a0861dfff6f3fe79
+          created: 1784009475953
+          modified: 1784009529319
+          isPrivate: false
+          description: ""
+          sortKey: -1783988730786
+        method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
   - name: MultiChatModel Requests
     meta:
       id: fld_3778d08c5d364671b182ef868b7f499e

@@ -162,6 +162,58 @@ collection:
             send: true
             store: true
           rebuildPath: true
+  - name: MultiChatModel Requests
+    meta:
+      id: fld_3778d08c5d364671b182ef868b7f499e
+      created: 1784005866265
+      modified: 1784005866265
+      sortKey: -1784005866265
+      description: ""
+    children:
+      - url: http://localhost:8080/api/ollama/chat
+        name: MultiModel-Ollama Chat Call
+        meta:
+          id: req_599c302177c749ecb0e089dbd6ec1c74
+          created: 1784005898774
+          modified: 1784006016252
+          isPrivate: false
+          description: ""
+          sortKey: -1784005898774
+        method: GET
+        parameters:
+          - name: message
+            value: what is your name and which model are you using?
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/openai/chat
+        name: MultiModel-OpenAI Chat Call
+        meta:
+          id: req_3c4e12c737f94696bb0ff2b1458d4bca
+          created: 1784006008612
+          modified: 1784006026064
+          isPrivate: false
+          description: ""
+          sortKey: -1783998517411.5
+        method: GET
+        parameters:
+          - name: message
+            value: what is your name and which model are you using?
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
 cookieJar:
   name: Default Jar
   meta:

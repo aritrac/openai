@@ -270,7 +270,7 @@ collection:
         meta:
           id: req_dee02399a95d42c7b3d470ff9a87023c
           created: 1784166997651
-          modified: 1784167143405
+          modified: 1784182370328
           isPrivate: false
           description: ""
           sortKey: -1784009027361.5
@@ -279,6 +279,33 @@ collection:
           - name: message
             value: I used 5 leaves in this year. How many will be forwarded to next year?
             disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Chat Format
+    meta:
+      id: fld_f88529d6fc104873bd2de8c83d37e6d1
+      created: 1784182383866
+      modified: 1784182383866
+      sortKey: -1784182383866
+      description: ""
+    children:
+      - url: http://localhost:8080/api/chat-bean?message=provide me the cities present
+          in India
+        name: New Request
+        meta:
+          id: req_bd1df54bb40d4e24aa7d0e71a8b77c7b
+          created: 1784182388831
+          modified: 1784182435654
+          isPrivate: false
+          description: ""
+          sortKey: -1784182388831
+        method: GET
         settings:
           renderRequestBody: true
           encodeUrl: true

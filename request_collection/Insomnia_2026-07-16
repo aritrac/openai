@@ -297,14 +297,71 @@ collection:
     children:
       - url: http://localhost:8080/api/chat-bean?message=provide me the cities present
           in India
-        name: New Request
+        name: Formatted LLM Response as custom class
         meta:
           id: req_bd1df54bb40d4e24aa7d0e71a8b77c7b
           created: 1784182388831
-          modified: 1784182435654
+          modified: 1784186631739
           isPrivate: false
           description: ""
           sortKey: -1784182388831
+        method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/chat-list?message=provide me the cities present
+          in India
+        name: Formatted LLM Response as List of Objects
+        meta:
+          id: req_6d70e3163c0e466983d27553cb49fc18
+          created: 1784184375202
+          modified: 1784184382965
+          isPrivate: false
+          description: ""
+          sortKey: -1784097272390
+        method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/chat-map?message=provide me the cities present in
+          India
+        name: Formatted LLM Response as Map of Objects
+        meta:
+          id: req_960e475180a440499ab15739fb526575
+          created: 1784184598079
+          modified: 1784184606614
+          isPrivate: false
+          description: ""
+          sortKey: -1784054714169.5
+        method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/chat-bean-list?message=provide me the cities
+          present in India and USA
+        name: Formatted LLM Response as list of custom class
+        meta:
+          id: req_51b1c9c9da344df4abd016588713a66c
+          created: 1784186560636
+          modified: 1784186560636
+          isPrivate: false
+          description: ""
+          sortKey: -1784139830610.5
         method: GET
         settings:
           renderRequestBody: true

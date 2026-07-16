@@ -1,0 +1,302 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Sample Requests
+meta:
+  id: wrk_52c64db11f7f44ada1da7c9d5168caa4
+  created: 1783996330880
+  modified: 1783996361926
+  description: ""
+collection:
+  - name: OpenAI_Requests
+    meta:
+      id: fld_aa488b49015a46029dce08e0229ce0ca
+      created: 1783988725424
+      modified: 1783988725424
+      sortKey: -1783988725424
+      description: ""
+    children:
+      - url: http://localhost:8080/api/chat?message=what is the capital of India?
+        name: OpenAI Simple Chat Request
+        meta:
+          id: req_91d63bde02c248c0b270f69871a47bb1
+          created: 1783988730811
+          modified: 1783991155048
+          isPrivate: false
+          description: ""
+          sortKey: -1783988730811
+        method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/chat?message=what is your name and which model
+          are you using?
+        name: Ollama Simple Prompt Local
+        meta:
+          id: req_0db3613c7d654e08b06f21449a7c90ef
+          created: 1783991136049
+          modified: 1783993577556
+          isPrivate: false
+          description: ""
+          sortKey: -1783991136049
+        method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/chat?message=tell me a joke about Spring Boot?
+        name: Ollama Simple Joke Prompt Local
+        meta:
+          id: req_10e07f44867b47bb9ac78c8883eda8e2
+          created: 1783993625482
+          modified: 1783993675413
+          isPrivate: false
+          description: ""
+          sortKey: -1783989933430
+        method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/chat?message=tell me a joke about Spring AI?
+        name: OpenAI Simple Joke Chat Request
+        meta:
+          id: req_14a4c16e683a4db19f65bbab1f92c652
+          created: 1783993634384
+          modified: 1783993650593
+          isPrivate: false
+          description: ""
+          sortKey: -1783988730761
+        method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/chat?message=what is your name and which model
+          are you using?
+        name: Docker Gemma Simple Prompt Local
+        meta:
+          id: req_880e5250e4f2434c9848aca217ae0bb1
+          created: 1783995902490
+          modified: 1783995902490
+          isPrivate: false
+          description: ""
+          sortKey: -1783990534739.5
+        method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/chat?message=tell me a joke about Spring Boot?
+        name: Docker Gemma Simple Joke Prompt Local
+        meta:
+          id: req_595371ba13c140b789536ca64e3f17c9
+          created: 1783995935941
+          modified: 1783995935941
+          isPrivate: false
+          description: ""
+          sortKey: -1783989332120.5
+        method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/chat?message=what is your name and which model
+          are you using?
+        name: Bedrock Claude Sonnet Simple Prompt Local
+        meta:
+          id: req_0a1504f442a84a25b03bcc2faae5513b
+          created: 1783999930024
+          modified: 1783999930024
+          isPrivate: false
+          description: ""
+          sortKey: -1783990835394.25
+        method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/chat?message=tell me a joke about Spring Boot?
+        name: Bedrock Claude Sonnet Simple Joke Prompt Local
+        meta:
+          id: req_bf3f01adaf6044a38ba492d6defe6eec
+          created: 1783999948233
+          modified: 1783999948233
+          isPrivate: false
+          description: ""
+          sortKey: -1783989632775.25
+        method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/chat?message=when my laptop can be replaced?
+        name: OpenAI System and User Role Chat Request
+        meta:
+          id: req_d7b7f4f915e943c8a0861dfff6f3fe79
+          created: 1784009475953
+          modified: 1784011025865
+          isPrivate: false
+          description: ""
+          sortKey: -1783988730786
+        method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: MultiChatModel Requests
+    meta:
+      id: fld_3778d08c5d364671b182ef868b7f499e
+      created: 1784005866265
+      modified: 1784005866265
+      sortKey: -1784005866265
+      description: ""
+    children:
+      - url: http://localhost:8080/api/ollama/chat
+        name: MultiModel-Ollama Chat Call
+        meta:
+          id: req_599c302177c749ecb0e089dbd6ec1c74
+          created: 1784005898774
+          modified: 1784006016252
+          isPrivate: false
+          description: ""
+          sortKey: -1784005898774
+        method: GET
+        parameters:
+          - name: message
+            value: what is your name and which model are you using?
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/openai/chat
+        name: MultiModel-OpenAI Chat Call
+        meta:
+          id: req_3c4e12c737f94696bb0ff2b1458d4bca
+          created: 1784006008612
+          modified: 1784006026064
+          isPrivate: false
+          description: ""
+          sortKey: -1783998517411.5
+        method: GET
+        parameters:
+          - name: message
+            value: what is your name and which model are you using?
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: PromptTemplate Demo
+    meta:
+      id: fld_6b2c0b578f574e29993aeef6acdb9c5c
+      created: 1784012136243
+      modified: 1784012136243
+      sortKey: -1784012136243
+      description: ""
+    children:
+      - url: http://localhost:8080/api/email?customerName="Aritra
+          Chatterjee"&customerMessage="When I am going to get the order
+          delivery?"
+        name: Using a prompt template for forming email
+        meta:
+          id: req_982df5c2bf104e9db768625958039edf
+          created: 1784012155949
+          modified: 1784012217231
+          isPrivate: false
+          description: ""
+          sortKey: -1784012155949
+        method: GET
+        parameters:
+          - name: message
+            value: what is the capital of India?
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/prompt-stuffing?message=I used 5 leaves in this
+          year. How many will be forwarded to next year?
+        name: Using a prompt stuffing for context for HR queries
+        meta:
+          id: req_dee02399a95d42c7b3d470ff9a87023c
+          created: 1784166997651
+          modified: 1784167143405
+          isPrivate: false
+          description: ""
+          sortKey: -1784009027361.5
+        method: GET
+        parameters:
+          - name: message
+            value: I used 5 leaves in this year. How many will be forwarded to next year?
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_b776f420388f47deaef0b68124bc4989
+    created: 1783988688023
+    modified: 1783988688023
+environments:
+  name: Base Environment
+  meta:
+    id: env_79f245c23d7347b495ae3d2bf40120aa
+    created: 1783988688021
+    modified: 1783988688021
+    isPrivate: false

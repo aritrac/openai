@@ -1,5 +1,6 @@
 package com.binarylife.openai.controller;
 
+import com.binarylife.openai.advisors.TokenUsageAuditAdvisor;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,7 +18,8 @@ public class ChatController {
 
     @GetMapping("/chat")
     public String chat(@RequestParam("message") String message) {
-        return chatClient.prompt()
+        return chatClient
+                .prompt()
                 //overriding default system message
                 .system("""
                         You are an internal IT helpdesk assistant. Your role is to assist\s

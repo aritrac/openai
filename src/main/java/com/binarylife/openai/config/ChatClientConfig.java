@@ -1,10 +1,13 @@
 package com.binarylife.openai.config;
 
+import com.binarylife.openai.advisors.TokenUsageAuditAdvisor;
 import org.springframework.ai.chat.client.ChatClient;
 //import org.springframework.ai.ollama.OllamaChatModel;
 import org.springframework.ai.chat.client.advisor.SimpleLoggerAdvisor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+
+import java.util.List;
 
 @Configuration
 public class ChatClientConfig {
@@ -12,7 +15,7 @@ public class ChatClientConfig {
     @Bean
     public ChatClient openAiChatClient(ChatClient.Builder chatClientBuilder) {
         return chatClientBuilder
-                .defaultAdvisors(new SimpleLoggerAdvisor())
+                .defaultAdvisors(List.of(new SimpleLoggerAdvisor(), new TokenUsageAuditAdvisor())) //global advisors
                 .defaultSystem("""
                         You are an internal HR assistant. Your role is to help\s
                         employees with questions related to HR policies, such as \s

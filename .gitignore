@@ -5,6 +5,7 @@ target/
 !**/src/test/**/target/
 /src/main/resources/chatmemory.lock.db
 /src/main/resources/chatmemory.mv.db
+/src/main/resources/chatmemory.trace.db
 
 ### IntelliJ IDEA ###
 .idea

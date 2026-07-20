@@ -20,12 +20,13 @@ public class ChatMemoryController {
 
     @GetMapping("/chat-memory")
     public ResponseEntity<String> chatMemory(
+            @RequestParam("username") String username,
             @RequestParam("message") String message
     ) {
         return ResponseEntity.ok(
                 chatClient.prompt()
                         .user(message)
-                        .advisors(advisorSpec -> advisorSpec.param(ChatMemory.CONVERSATION_ID, "default"))
+                        .advisors(advisorSpec -> advisorSpec.param(ChatMemory.CONVERSATION_ID, username))
                         .call()
                         .content());
     }

@@ -380,15 +380,42 @@ collection:
       description: ""
     children:
       - url: http://localhost:8080/api/chat-memory?message=tell me my name
-        name: Chat Memory Sample Request
+        name: Chat Conversation User One Default
         meta:
           id: req_b228bf1b1ac742548e7cdba159db059c
           created: 1784516394215
-          modified: 1784519542645
+          modified: 1784520155083
           isPrivate: false
           description: ""
           sortKey: -1784516394215
         method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/chat-memory?message=tell me my name
+        name: Chat Conversation For Two Unique Users
+        meta:
+          id: req_6bf5d8dda4a0470790aac702a557e5d6
+          created: 1784520168656
+          modified: 1784520829219
+          isPrivate: false
+          description: ""
+          sortKey: -1784349391523
+        method: GET
+        parameters:
+          - name: message
+            value: tell me my name
+            description: ""
+            disabled: false
+          - name: username
+            value: ankita
+            description: ""
+            disabled: false
         settings:
           renderRequestBody: true
           encodeUrl: true

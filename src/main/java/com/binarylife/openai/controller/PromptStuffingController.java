@@ -1,6 +1,7 @@
 package com.binarylife.openai.controller;
 
 import org.springframework.ai.chat.client.ChatClient;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.Resource;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class PromptStuffingController {
     private final ChatClient chatClient;
 
-    public PromptStuffingController(ChatClient chatClient) {
+    public PromptStuffingController(@Qualifier("openAiChatClient") ChatClient chatClient) {
         this.chatClient = chatClient;
     }
 

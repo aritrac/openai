@@ -69,6 +69,10 @@
 			<artifactId>spring-boot-docker-compose</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.ai</groupId>
+			<artifactId>spring-ai-tika-document-reader</artifactId>
+		</dependency>
 <!--		due to multiple app restarts, our vectorstore will contain duplicate documents, hence commenting it out momentarily-->
 <!--		<dependency>-->
 <!--			<groupId>org.springframework.boot</groupId>-->

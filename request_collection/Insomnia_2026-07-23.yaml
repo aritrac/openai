@@ -465,7 +465,7 @@ collection:
         meta:
           id: req_fb4ba5dc912242bab59eee215924866b
           created: 1784771293335
-          modified: 1784776646953
+          modified: 1784777879691
           isPrivate: false
           description: ""
           sortKey: -1784642701155.5
@@ -473,6 +473,34 @@ collection:
         parameters:
           - name: message
             value: tell me about notice period?
+            description: ""
+            disabled: false
+        headers:
+          - name: username
+            value: aritra01
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/rag/web-search/chat
+        name: RAG Web Search Document Request
+        meta:
+          id: req_3f8ad1267e6b456c9247706202a6327b
+          created: 1784782321970
+          modified: 1784782359524
+          isPrivate: false
+          description: ""
+          sortKey: -1784579547685.25
+        method: GET
+        parameters:
+          - name: message
+            value: how is the BSE stock market doing today?
             description: ""
             disabled: false
         headers:

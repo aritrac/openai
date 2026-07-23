@@ -8,10 +8,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.Resource;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.RequestHeader;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -31,7 +28,7 @@ public class RAGController {
         this.chatClient = chatClient;
         this.vectorStore = vectorStore;
     }
-
+    @GetMapping("/random/chat")
     public ResponseEntity<String> randomChat(@RequestHeader("username") String username, @RequestParam("message") String message) {
         SearchRequest searchRequest = SearchRequest.builder().query(message).topK(3).similarityThreshold(0.5).build();
         List<Document> similarDocs = vectorStore.similaritySearch(searchRequest);

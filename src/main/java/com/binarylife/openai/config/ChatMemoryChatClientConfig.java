@@ -1,6 +1,7 @@
 package com.binarylife.openai.config;
 
 import com.binarylife.openai.advisors.TokenUsageAuditAdvisor;
+import com.binarylife.openai.rag.PIIMaskingDocumentPostProcessor;
 import com.openai.models.ChatModel;
 import org.springframework.ai.chat.client.ChatClient;
 //import org.springframework.ai.ollama.OllamaChatModel;
@@ -51,7 +52,9 @@ public class ChatMemoryChatClientConfig {
                 .documentRetriever(
                         VectorStoreDocumentRetriever.builder().vectorStore(vectorStore)
                                 .topK(3).similarityThreshold(0.5).build()
-                ).build();
+                )
+                .documentPostProcessors(PIIMaskingDocumentPostProcessor.builder())
+                .build();
     }
 
 }

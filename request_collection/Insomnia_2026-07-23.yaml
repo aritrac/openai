@@ -516,6 +516,34 @@ collection:
             send: true
             store: true
           rebuildPath: true
+      - url: http://localhost:8080/api/rag/document/chat
+        name: RAG Document Request With Pre Retrieval Applied
+        meta:
+          id: req_699c7fb20b3740f2a113566f5c1f3ed3
+          created: 1784783838738
+          modified: 1784785138076
+          isPrivate: false
+          description: ""
+          sortKey: -1784611124420.375
+        method: GET
+        parameters:
+          - name: message
+            value: tell me about the notice period
+            description: ""
+            disabled: false
+        headers:
+          - name: username
+            value: aritra01
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
 cookieJar:
   name: Default Jar
   meta:

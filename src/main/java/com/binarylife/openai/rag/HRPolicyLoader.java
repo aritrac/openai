@@ -26,8 +26,13 @@ public class HRPolicyLoader {
     @PostConstruct
     public void loadPDF() {
         TikaDocumentReader tikaDocumentReader = new TikaDocumentReader(policyFile);
-        List<Document> documents = tikaDocumentReader.get();
-        TextSplitter textSplitter = TokenTextSplitter.builder().withChunkSize(200).withMaxNumChunks(400).build();
-        vectorStore.add(textSplitter.split(documents));
+        try {
+            List<Document> documents = tikaDocumentReader.get();
+            TextSplitter textSplitter = TokenTextSplitter.builder().withChunkSize(200).withMaxNumChunks(400).build();
+            vectorStore.add(textSplitter.split(documents));
+        } catch (RuntimeException e) {
+            e.getCause().printStackTrace();
+            // Log detailed info about which PDF caused the issue
+        }
     }
 }

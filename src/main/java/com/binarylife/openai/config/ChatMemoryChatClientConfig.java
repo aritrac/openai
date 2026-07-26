@@ -3,6 +3,7 @@ package com.binarylife.openai.config;
 import com.binarylife.openai.advisors.TokenUsageAuditAdvisor;
 import com.binarylife.openai.rag.PIIMaskingDocumentPostProcessor;
 import com.openai.models.ChatModel;
+import org.springframework.ai.chat.cache.semantic.SemanticCacheAdvisor;
 import org.springframework.ai.chat.client.ChatClient;
 //import org.springframework.ai.ollama.OllamaChatModel;
 import org.springframework.ai.chat.client.advisor.MessageChatMemoryAdvisor;
@@ -32,12 +33,12 @@ public class ChatMemoryChatClientConfig {
 
     @Bean
     public ChatClient chatMemoryChatClient(ChatClient.Builder chatClientBuilder, ChatMemory chatMemory,
-                                           RetrievalAugmentationAdvisor retrievalAugmentationAdvisor) {
+                                           RetrievalAugmentationAdvisor retrievalAugmentationAdvisor, SemanticCacheAdvisor semanticCacheAdvisor) {
         Advisor loggerAdvisor = new SimpleLoggerAdvisor();
         Advisor tokenAuditAdvisor = new TokenUsageAuditAdvisor();
         Advisor memoryAdvisor = MessageChatMemoryAdvisor.builder(chatMemory).build();
         return chatClientBuilder
-                .defaultAdvisors(List.of(loggerAdvisor, memoryAdvisor, tokenAuditAdvisor, retrievalAugmentationAdvisor))
+                .defaultAdvisors(List.of(loggerAdvisor, memoryAdvisor, tokenAuditAdvisor, retrievalAugmentationAdvisor, semanticCacheAdvisor))
                 .build();
     }
 

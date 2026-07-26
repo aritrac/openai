@@ -19,8 +19,8 @@ public class WebSearchRAGChatClientConfig {
 
     @Bean("webSearchRAGChatClient")
     public ChatClient chatClient(ChatClient.Builder chatClientBuilder, ChatMemory chatMemory, RestClient.Builder restClientBuilder) {
-        Advisor loggerAdvisor = new SimpleLoggerAdvisor();
-        Advisor tokenUsageAdvisor = new TokenUsageAuditAdvisor();
+//        Advisor loggerAdvisor = new SimpleLoggerAdvisor();
+//        Advisor tokenUsageAdvisor = new TokenUsageAuditAdvisor(); available in ChatClientBuilderCustomizerConfig
         Advisor memoryAdvisor = MessageChatMemoryAdvisor.builder(chatMemory).build();
 
         var webSearchRAGAdvisor = RetrievalAugmentationAdvisor
@@ -33,9 +33,9 @@ public class WebSearchRAGChatClientConfig {
                 build();
 
         return chatClientBuilder.defaultAdvisors(List.of(
-                        loggerAdvisor,
+//                        loggerAdvisor,
                         memoryAdvisor,
-                        tokenUsageAdvisor,
+//                        tokenUsageAdvisor,
                         webSearchRAGAdvisor))
                 .build();
     }

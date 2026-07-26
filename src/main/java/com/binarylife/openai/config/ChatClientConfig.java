@@ -22,7 +22,7 @@ public class ChatClientConfig {
 //                .maxCompletionTokens(10); We don't want to restrict the response of the model
         return chatClientBuilder
                 .defaultOptions(options)
-                .defaultAdvisors(List.of(new SimpleLoggerAdvisor(), new TokenUsageAuditAdvisor())) //global advisors
+//                .defaultAdvisors(List.of(new SimpleLoggerAdvisor(), new TokenUsageAuditAdvisor())) //global advisors are now availabe in ChatClientBuilderCustomizerConfig
                 .defaultSystem("""
                         You are an internal HR assistant. Your role is to help\s
                         employees with questions related to HR policies, such as \s

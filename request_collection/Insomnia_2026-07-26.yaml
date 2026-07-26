@@ -553,11 +553,11 @@ collection:
       description: ""
     children:
       - url: http://localhost:8080/api/open-chat
-        name: Semantic Cache Request
+        name: Redis Semantic Cache Request
         meta:
           id: req_d9c95e37527147a5865ed27ddfbf1aba
           created: 1785028038867
-          modified: 1785029994275
+          modified: 1785030940717
           isPrivate: false
           description: ""
           sortKey: -1785028038867
@@ -565,6 +565,62 @@ collection:
         parameters:
           - name: message
             value: Kathmandu is the capital of which country?
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/open-chat
+        name: Vector Store Semantic Cache Request
+        meta:
+          id: req_29f72b15d90f47be83aaace373349893
+          created: 1785030934223
+          modified: 1785031239399
+          isPrivate: false
+          description: ""
+          sortKey: -1784898523481.5
+        method: GET
+        parameters:
+          - name: message
+            value: Delhi is the capital of which country?
+            description: ""
+            disabled: false
+        headers:
+          - name: username
+            value: aritra01
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/rag/document/chat
+        name: Vector Store RAG Semantic Cache Request
+        meta:
+          id: req_f3b6b8be09e14245aede8e47d03ec715
+          created: 1785031346327
+          modified: 1785031430151
+          isPrivate: false
+          description: ""
+          sortKey: -1784833765788.75
+        method: GET
+        parameters:
+          - name: message
+            value: what is the notice period?
+            description: ""
+            disabled: false
+        headers:
+          - name: username
+            value: aritra01
             description: ""
             disabled: false
         settings:

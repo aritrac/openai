@@ -1,10 +1,10 @@
 type: collection.insomnia.rest/5.0
 schema_version: "5.1"
-name: Sample Requests
+name: OpenAI_Project_Requests
 meta:
   id: wrk_52c64db11f7f44ada1da7c9d5168caa4
   created: 1783996330880
-  modified: 1783996361926
+  modified: 1785080755022
   description: ""
 collection:
   - name: OpenAI_Requests
@@ -672,14 +672,14 @@ collection:
         meta:
           id: req_7b3dcdc3e5204489a834995933c98f82
           created: 1785042018461
-          modified: 1785044045741
+          modified: 1785046977168
           isPrivate: false
           description: ""
           sortKey: -1785042018461
         method: GET
         parameters:
           - name: message
-            value: I am not able to login to my account. I think my account is locked
+            value: what is my ticket status?
             description: ""
             disabled: false
         headers:

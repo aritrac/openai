@@ -35,9 +35,9 @@ public class HelpDeskChatClientConfig {
                 .build();
     }
 
-    @Bean
-    ToolExecutionExceptionProcessor toolExecutionExceptionProcessor(){
-        return new DefaultToolExecutionExceptionProcessor(true);
-    }
+//    @Bean
+//    ToolExecutionExceptionProcessor toolExecutionExceptionProcessor(){
+//        return new DefaultToolExecutionExceptionProcessor(true);
+//    }
 
 }

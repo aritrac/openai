@@ -39,7 +39,7 @@ public class HelpDeskTools {
         LOGGER.info("Fetching open tickets for user: {}", username);
         List<HelpDeskTicket> tickets = service.getTicketsByUsername(username);
         LOGGER.info("Found {} open tickets for user: {}", tickets.size(), username);
-        throw new RuntimeException("Unable to fetch ticket status");
-        //return tickets;
+//        throw new RuntimeException("Unable to fetch ticket status");
+        return tickets;
     }
 }

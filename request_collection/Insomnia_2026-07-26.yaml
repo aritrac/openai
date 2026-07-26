@@ -640,23 +640,80 @@ collection:
       description: ""
     children:
       - url: http://localhost:8080/api/tools/local-time
-        name: New Request
+        name: Get Current Local Time Using Tools
         meta:
           id: req_d4da79633ccd4c50b8f4f944c5960f3c
           created: 1785032703370
-          modified: 1785032827987
+          modified: 1785034293254
           isPrivate: false
           description: ""
           sortKey: -1785032703370
         method: GET
         parameters:
           - name: message
-            value: what is the current time in Asansol, West Bengal India?
+            value: what is my current local time?
             description: ""
             disabled: false
         headers:
           - name: username
-            value: aritra01
+            value: aritra020
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/help-desk
+        name: Create Help Desk Ticket Using DB Tool Call
+        meta:
+          id: req_7b3dcdc3e5204489a834995933c98f82
+          created: 1785042018461
+          modified: 1785044045741
+          isPrivate: false
+          description: ""
+          sortKey: -1785042018461
+        method: GET
+        parameters:
+          - name: message
+            value: I am not able to login to my account. I think my account is locked
+            description: ""
+            disabled: false
+        headers:
+          - name: username
+            value: amit02
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/help-desk
+        name: Create Help Desk Ticket Using DB Tool Call using returnDirect=true
+        meta:
+          id: req_4e480b5665574907b87db9dcae85cbb1
+          created: 1785044782719
+          modified: 1785045010299
+          isPrivate: false
+          description: ""
+          sortKey: -1785037360915.5
+        method: GET
+        parameters:
+          - name: message
+            value: yes please create with the description as "unable to access the profile
+              page"
+            description: ""
+            disabled: false
+        headers:
+          - name: username
+            value: amit04
             description: ""
             disabled: false
         settings:
